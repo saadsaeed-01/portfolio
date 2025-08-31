@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Your Name</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Muhammad Saad Saeed</div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero-container">
+        <h1 class="typing-text">Hi, I'm Muhammad Saad Saeed</h1>
+        <p class="hero-subtitle">"I’m a passionate web developer creating beautiful and functional websites."</p>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/profile.jpeg" alt="Profile Picture" class="profile-pic"/>
+            <p>
+                "I’m a web developer with a focus on creating clean, user-friendly, and efficient designs.
+                I enjoy bringing ideas to life in the browser and always aim for high-quality work."
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" data-modal="modal1">
+                <img src="images/Screenshot From 2025-08-04 21-35-38.png" alt="Project 1" />
+                <h3>Project One</h3>
+            </div>
+            <div class="project-card" data-modal="modal2">
+                <img src="images/Screenshot From 2025-08-06 12-15-36.png" alt="Project 2" />
+                <h3>Project Two</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Project One</h3>
+            <p>Details about Project One.</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Project Two</h3>
+            <p>Details about Project Two.</p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">UI/UX</div>
+            <div class="skill">Git</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Muhammad Saad Saeed. All rights reserved.</p>
+    </footer>
+</body>
+</html>
